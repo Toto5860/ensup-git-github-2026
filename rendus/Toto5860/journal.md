@@ -68,3 +68,39 @@ git log --oneline -- acces.md m’a permis de retrouver le commit 901edc3.
 
 git show 901edc3 affichait l’ajout des indications d’accès.
 
+
+
+\### TP 2 — Une branche pour une évolution
+
+
+
+J’ai créé feature/programme avec git switch -c feature/programme.
+
+J’y ai ajouté programme.md dans le commit 29a628f.
+
+
+
+Avant la fusion, programme.md était absent sur main.
+
+Pour intégrer cette évolution, je me suis placé sur main,
+
+puis j’ai lancé git merge feature/programme.
+
+
+
+La fusion était un fast-forward : main n’avait pas avancé
+
+depuis la création de la branche. Aucun commit de fusion n’a été créé.
+
+
+
+Avant : main pointait vers 44d741d et feature/programme vers 29a628f.
+
+Après : les deux branches pointent vers 29a628f.
+
+
+
+ls confirme la présence de programme.md.
+
+git status confirme que le dépôt est propre.
+
