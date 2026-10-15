@@ -104,3 +104,35 @@ ls confirme la présence de programme.md.
 
 git status confirme que le dépôt est propre.
 
+
+
+\### Enquête 2 — Divergence sans conflit
+
+
+
+Depuis le commit commun 8ed603a, les deux branches ont avancé :
+
+\- main : f836476, modification de README.md.
+
+\- feature/accessibilite : b7abb34, ajout de accessibilite.md.
+
+
+
+La fusion a réussi sans conflit car les fichiers modifiés étaient différents.
+
+
+
+Le commit de fusion 096feca possède deux parents :
+
+f836476 et b7abb34.
+
+
+
+Contrairement au fast-forward du TP 2, cette fusion crée
+
+un nouveau commit qui relie les deux histoires.
+
+
+
+git status confirme que le dépôt est propre.
+
