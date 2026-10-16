@@ -216,3 +216,59 @@ non ignoré et que la modification n’est pas déjà commitée.
 
 Commande de contrôle : git status.
 
+
+
+\### TP 5 — Laboratoire des erreurs
+
+
+
+git restore --staged brouillon.txt a retiré le fichier de l’index
+
+sans le supprimer du dossier.
+
+
+
+Le commit 7dda2b8 ajoutait le brouillon.
+
+Le revert 820bdbe a annulé cet ajout avec un nouveau commit.
+
+Le commit d’origine reste dans l’historique.
+
+
+
+Un conflit est apparu dans horaire.txt :
+
+\- main proposait 09h30, dans le commit 3d3e8ad.
+
+\- feature/horaire proposait 10h00, dans le commit 0edc20c.
+
+
+
+Git ne pouvait pas choisir seul l’horaire souhaité.
+
+HEAD désignait main, la branche sur laquelle je lançais la fusion.
+
+Le commanditaire a retenu 09h45.
+
+
+
+J’ai remplacé le contenu par « Accueil : 09h45 »,
+
+puis terminé la fusion avec :
+
+git add horaire.txt
+
+git commit -m "fix: convenir de 09h45"
+
+
+
+Le commit de fusion 41603b3 a deux parents : 3d3e8ad et 0edc20c.
+
+Le dépôt est propre après la résolution.
+
+
+
+Pendant une fusion en cours, git merge --abort permet
+
+d’abandonner la tentative de fusion.
+
