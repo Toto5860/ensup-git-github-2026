@@ -180,3 +180,39 @@ https://github.com/AbidHamza/ensup-git-github-2026/pull/7
 
 \- Message : merge: ajouter les indications d accessibilite.
 
+
+
+\### Enquête 3 — Diagnostiquer les erreurs
+
+
+
+1\. Permission denied
+
+Le compte utilisé n’a pas les droits nécessaires.
+
+Je vérifie que origin pointe vers mon fork avec git remote -v,
+
+puis je vérifie le compte utilisé pour la connexion.
+
+
+
+2\. non-fast-forward
+
+Le dépôt distant contient des commits absents de ma branche locale.
+
+git fetch origin récupère les commits sans les fusionner.
+
+Je compare ensuite les histoires avec :
+
+git log --graph --oneline --all
+
+
+
+3\. nothing to commit
+
+Je vérifie que le fichier est enregistré, dans le bon dossier,
+
+non ignoré et que la modification n’est pas déjà commitée.
+
+Commande de contrôle : git status.
+
