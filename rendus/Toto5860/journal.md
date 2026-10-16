@@ -136,3 +136,27 @@ un nouveau commit qui relie les deux histoires.
 
 git status confirme que le dépôt est propre.
 
+
+
+\### TP 3 — Publication et collecte
+
+
+
+PR de collecte :
+
+https://github.com/AbidHamza/ensup-git-github-2026/pull/10
+
+
+
+Un fork est ma copie du dépôt sur GitHub.
+
+Un clone est la copie du dépôt sur mon ordinateur.
+
+Une branche représente une ligne de développement dans un dépôt.
+
+
+
+git push envoie mes commits locaux vers mon fork sur GitHub.
+
+La PR propose mes modifications au professeur pour relecture.
+
