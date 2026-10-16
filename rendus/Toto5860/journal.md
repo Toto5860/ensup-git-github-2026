@@ -272,3 +272,45 @@ Pendant une fusion en cours, git merge --abort permet
 
 d’abandonner la tentative de fusion.
 
+
+
+\### Incident distant — Programme modifié en ligne
+
+
+
+J’ai modifié programme.md directement sur GitHub :
+
+commit b689e5c, ajout de la visite libre à 12h00.
+
+
+
+Sur mon PC, j’ai modifié README.md :
+
+commit 48630df, conseil d’arrivée anticipée.
+
+
+
+Le push a été refusé avec le message « fetch first »,
+
+car le dépôt distant contenait un commit absent de ma branche locale.
+
+
+
+git fetch origin a récupéré les commits distants et actualisé origin/main.
+
+Cette commande seule ne modifie pas mes fichiers locaux.
+
+
+
+J’ai ensuite intégré origin/main avec git merge.
+
+La fusion 6e11903 a réussi sans conflit,
+
+car les modifications concernaient des fichiers différents.
+
+
+
+Après git push origin main, j’ai vérifié sur GitHub
+
+que les deux changements étaient présents.
+
