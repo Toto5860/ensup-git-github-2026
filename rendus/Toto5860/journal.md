@@ -160,3 +160,23 @@ git push envoie mes commits locaux vers mon fork sur GitHub.
 
 La PR propose mes modifications au professeur pour relecture.
 
+
+
+\### TP 3 — Vérification d’un autre rendu
+
+
+
+PR consultée :
+
+https://github.com/AbidHamza/ensup-git-github-2026/pull/7
+
+
+
+\- Auteur : yassminnee.
+
+\- Dossier : rendus/yassminnee/.
+
+\- Dernier commit observé : 88e452f.
+
+\- Message : merge: ajouter les indications d accessibilite.
+
