@@ -8,3 +8,4 @@
 
 11h00 : atelier découverte : Salle 2
 
+12h00 : visite libre des stands, Hall A.
